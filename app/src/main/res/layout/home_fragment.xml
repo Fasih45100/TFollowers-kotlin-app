@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_second">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tnodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No data... yet !"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TVcreateprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="creat profile &amp; post"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tnodata"/>
+        <Button
+            android:id="@+id/Create_profile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Create profile"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVcreateprofile"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:translationZ="90dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/T_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click to show logo"
+                android:textSize="18dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:id="@+id/T_iconX"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:src="@drawable/xtwitternew"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="18dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:elevation="1dp"
+            app:layout_constraintTop_toBottomOf="@id/cons_layout"
+            app:tabGravity="fill"
+            app:tabIndicator="@color/black"
+            app:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For you" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following" />
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_post"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/TVTweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tweet"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:translationZ="30dp"
+            android:visibility="gone"
+            android:layout_marginBottom="34dp"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tweetbtn"/>
+
+        <RelativeLayout
+            android:id="@+id/photobtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="20dp"
+            android:translationZ="30dp"
+            android:visibility="gone"
+            android:background="@drawable/circle_corner_white"
+            app:layout_constraintBottom_toTopOf="@+id/edittweetbtn"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="13dp"
+                android:src="@drawable/outline_image" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/TVPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photos"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:translationZ="30dp"
+            android:visibility="gone"
+            android:layout_marginBottom="42dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintRight_toLeftOf="@+id/photobtn"
+            app:layout_constraintBottom_toTopOf="@+id/TVTweet"/>
+
+        <RelativeLayout
+            android:id="@+id/edittweetbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="20dp"
+            android:visibility="gone"
+            android:translationZ="30dp"
+            android:background="@drawable/circle_corner"
+            app:layout_constraintBottom_toTopOf="@+id/tweetbtn"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/add_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tweetbtn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="20dp"
+            android:translationZ="90dp"
+            android:background="@drawable/circle_corner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/add_icon" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/blur_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationZ="20dp"
+            android:visibility="gone"
+            android:background="@drawable/home_bg"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
