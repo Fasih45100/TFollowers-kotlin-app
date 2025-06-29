@@ -13,11 +13,13 @@
 - 🧩 Circle Image Views for profile aesthetics
 
 
-## 📸 Screenshots
-
-| Add Profile | Followers List |
-|-------------|----------------|
-| <img src="assets/screenshots/add_profile.png" width="300"/> | <img src="assets/screenshots/followers_list.png" width="300"/> |
+<h2>📸 Screenshots</h2>
+<p align="center">
+  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot1_20230930_152618.jpg" width="300"/> |
+  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot2_20230930_153038.jpg" width="300"/> |
+  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot3_20231001_104823.jpg" width="300"/> |
+  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot4_20231001_104849.jpg" width="300"/> |
+</p>
 
 
 
