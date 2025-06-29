@@ -16,18 +16,12 @@
 <h2>📸 Screenshots</h2>
 <p align="center">
    <img src="app/assets/screenshots/Screenshot1_20230930_152618.jpg" width="300"/> |
-   <img src="assets/screenshots/Screenshot2_20230930_153038.jpg" width="300"/> |
-   <img src="assets/screenshots/Screenshot3_20231001_104823.jpg" width="300"/> |
-   <img src="assets/screenshots/Screenshot4_20231001_104849.jpg" width="300"/> |
+   <img src="app/assets/screenshots/Screenshot2_20230930_153038.jpg" width="300"/> |
+   <img src="app/assets/screenshots/Screenshot3_20231001_104823.jpg" width="300"/> |
+   <img src="app/assets/screenshots/Screenshot4_20231001_104849.jpg" width="300"/> |
 </p>
 
 
-
-## 🚀 Getting Started
-
-git clone https://github.com/Fasih45100/TFollowers.git
-cd TFollowers
-Open the project in Android Studio and click Run.
 
 ## 🛠️ Tech Stack
 Kotlin – Primary development language
