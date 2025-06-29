@@ -15,10 +15,10 @@
 
 <h2>📸 Screenshots</h2>
 <p align="center">
-  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot1_20230930_152618.jpg" width="300"/> |
-  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot2_20230930_153038.jpg" width="300"/> |
-  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot3_20231001_104823.jpg" width="300"/> |
-  | <img src="assets/screenshots/screen1.png" width="300"/> | <img src="assets/screenshots/Screenshot4_20231001_104849.jpg" width="300"/> |
+   <img src="assets/screenshots/Screenshot1_20230930_152618.jpg" width="300"/> |
+   <img src="assets/screenshots/Screenshot2_20230930_153038.jpg" width="300"/> |
+   <img src="assets/screenshots/Screenshot3_20231001_104823.jpg" width="300"/> |
+   <img src="assets/screenshots/Screenshot4_20231001_104849.jpg" width="300"/> |
 </p>
 
 
@@ -29,14 +29,14 @@ git clone https://github.com/Fasih45100/TFollowers.git
 cd TFollowers
 Open the project in Android Studio and click Run.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Kotlin – Primary development language
 Room – For local database operations
 Glide – Efficient image loading
 ImagePicker – User profile photo selection
 Material Design – Beautiful UI components
 
-📦 Dependencies
+## 📦 Dependencies
 // Core
 implementation 'androidx.core:core-ktx:1.16.0'
 implementation 'androidx.appcompat:appcompat:1.7.1'
@@ -56,8 +56,8 @@ implementation "androidx.room:room-ktx:2.7.2"
 // Misc
 implementation 'com.facebook.fresco:fresco:2.5.0'
 
-📄 License
+## 📄 License
 This project is open-source and available under the MIT License.
 
-👨‍💻 Developed by Fasih Ullah
+## 👨‍💻 Developed by Fasih Ullah
 ⚡ Want a clean and custom app like this? Feel free to reach out or fork this repo!
